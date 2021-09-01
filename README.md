@@ -50,4 +50,4 @@ Here we are mentioning the comment that used to run the jar file in through the 
 * Now it is time to run the docker image. Use the following command to run the docker image.<br> 
   ```docker run -p8080:8080 <imagename>```
   * Here java application will be running inside the docket container , so we need to expose the application running port to outside the container. "-p8080:8080" is the command which expose the port to outside the docket container.
-###Thanks :)
+### Thanks :)
