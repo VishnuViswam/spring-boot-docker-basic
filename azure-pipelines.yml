@@ -6,8 +6,10 @@
 trigger:
 - main
 
-pool: SelfHostedAgentPoolUbuntu
-
+pool:
+  name: SelfHostedAgentPoolUbuntu
+  demands:
+   - agent.name -equals hostedubuntuvm
 steps:
 - task: Maven@3
   inputs:
