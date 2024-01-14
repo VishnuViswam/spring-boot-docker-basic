@@ -23,3 +23,6 @@ steps:
     repository: 'chanddocker'
     command: 'buildAndPush'
     Dockerfile: '**/DockerFile'
+    tags: |
+      latest
+      $(Build.BuildId)
