@@ -17,3 +17,9 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
+- task: Docker@2
+  inputs:
+    containerRegistry: 'dockerhubconn'
+    repository: 'chanddocker'
+    command: 'buildAndPush'
+    Dockerfile: '**/DockerFile'
